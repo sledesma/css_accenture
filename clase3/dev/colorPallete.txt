@@ -1,0 +1,4 @@
+Marron claro: #C8973E
+Marron oscuro: #291911 (textos)
+Madera: #782F0C
+Camel: #E9CFA6
