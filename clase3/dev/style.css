@@ -16,6 +16,28 @@ h1 {
   margin-top: 0;
 }
 
+#wrapper {
+  background-color: #E9CFA6;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  box-sizing: border-box;
+
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.boton_cta {
+  padding: 20px;
+  color: white;
+  background-color: #782F0C;
+  text-decoration: none;
+
+  margin-top: 20px;
+}
+
 
 /* HEADER */
 header {
@@ -47,24 +69,7 @@ header div {
   font-weight: bold;
 }
 
-header div a {
-  padding: 20px;
-  color: white;
-  background-color: #782F0C;
-  text-decoration: none;
-
-  margin-top: 20px;
-}
-
 /* MAIN */
-main {
-  background-color: #E9CFA6;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 15px;
-  box-sizing: border-box;
-}
 
 /* SECCION PROMOCIONES */
 #promociones #promociones-contenedor {
@@ -83,4 +88,61 @@ main {
   -moz-box-shadow: 0px 0px 17px 3px rgba(200,151,62,0.51);
 
   cursor: pointer;
+}
+
+/* CATALOGO */
+#catalogo {
+  margin-bottom: 50px;
+}
+
+#catalogo #catalogo-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#catalogo #catalogo-contenedor .catalogo-item {
+  width: 30%;
+  height: 200px;
+  margin: 1%;
+  background-color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  text-decoration: none;
+}
+
+#catalogo #catalogo-contenedor .catalogo-item div {
+  /* # RR GG BB TT */
+  background-color: #e9cfa6af;
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid black;
+  margin-top: 100px;
+  height: 200px;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+footer div {
+  width: 33%;
 }
