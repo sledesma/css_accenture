@@ -10,6 +10,17 @@
   <link rel="stylesheet" href="css/componentes.css">
 
   <style>
+    table {
+
+    }
+
+    .precio::before {
+      content: '$';
+    }
+
+    .stock::after {
+      content: ' u';
+    }
   </style>
 
   
@@ -20,5 +31,59 @@
     <span>Nombre usuario</span>
     <a href="#">Salir</a>
   </nav>
+
+  <main class="main-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-header">Productos</div>
+      <div class="sidebar-item">Item 1</div>
+      <div class="sidebar-item">Item 2</div>
+      <div class="sidebar-item">Item 3</div>
+    </aside>
+    <section class="area-trabajo">
+      <table>
+        <thead>
+          <tr>
+            <th>NOMBRE</th>
+            <th>DESCRIPCION</th>
+            <th>PRECIO</th>
+            <th>STOCK</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
 </body>
 </html>
