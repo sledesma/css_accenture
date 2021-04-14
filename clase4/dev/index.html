@@ -1,0 +1,97 @@
+<!--Login-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/globales.css">
+
+  <style>
+    /*Estilos puntuales de este archivo*/
+    aside, section {
+      height: 100vh;
+    }
+
+    aside {
+      background-image: url(img/principal.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 45%;
+      float: left;
+    }
+
+    section {
+      padding: 30px;
+      box-sizing: border-box;
+      width: 55%;
+      float: right;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section #formulario {
+      border: 1px solid #ccc;
+      padding: 50px;
+    }
+
+    section #formulario .control {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    section #formulario .control span {
+      text-transform: uppercase;
+      color: #073763ff;
+      font-weight: bold;
+    }
+
+    section #formulario .control input {
+      width: 300px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      padding: 10px;
+      outline: none;
+    }
+
+    section #formulario button {
+      background-color: #073763ff;
+      border: none;
+      font-weight: bold;
+      color: #eee;
+      text-transform: uppercase;
+      padding: 20px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <aside></aside>
+    <section>
+      <div id="formulario">
+        <form action="principal.html" method="GET">
+          <div class="control">
+            <span>Usuario</span>
+            <input type="text">
+          </div>
+          <div class="control">
+            <span>Contraseña</span>
+            <input type="password">
+          </div>
+          <button>Iniciar Sesión</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

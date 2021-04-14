@@ -1,0 +1,59 @@
+<!-- Principal - Vista general de todos los módulos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/globales.css">
+  <link rel="stylesheet" href="css/componentes.css">
+
+  <style>
+    /*Estilos de la grilla*/
+    #grilla {
+      display: grid;
+      grid-template-columns: 31.3% 31.3% 31.3%;
+      gap: 1%;
+      justify-content: center;
+
+      padding: 30px;
+    }
+
+    #grilla .grilla-item {
+      text-transform: uppercase;
+      text-decoration: none;
+
+      border: 1px solid #eee;
+      color: black;
+      height: 200px;
+      margin-bottom: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grilla-item-rojo { background-color: lightcoral; }
+    .grilla-item-verde { background-color: lightgreen; }
+    .grilla-item-azul { background-color: lightblue; }
+    .grilla-item-amarillo { background-color: lightgoldenrodyellow; }
+  </style>
+
+  <title>Admin</title>
+</head>
+<body>
+  <nav class="barra-menu">
+    <span>Nombre usuario</span>
+    <a href="#">Salir</a>
+  </nav>
+  <main id="grilla">
+    <a href="#" class="grilla-item grilla-item-rojo">Modulo 1</a>
+    <a href="#" class="grilla-item grilla-item-verde">Modulo 2</a>
+    <a href="#" class="grilla-item grilla-item-azul">Modulo 3</a>
+    <a href="#" class="grilla-item grilla-item-rojo">Modulo 4</a>
+    <a href="#" class="grilla-item grilla-item-amarillo">Modulo 5</a>
+    <a href="#" class="grilla-item grilla-item-azul">Modulo 6</a>
+  </main>
+</body>
+</html>
