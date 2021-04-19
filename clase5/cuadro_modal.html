@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html, body { margin: 0; }
+    /* VISTA INICIAL */
+    .cuadro-modal-content {
+      top: 15%;
+      left: 40%;
+      padding: 100px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      background-color: white;
+      border-radius: 50px;
+    }
+
+    .cuadro-modal {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100vh;
+    }
+
+    .cuadro-modal:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="modal1" class="cuadro-modal">
+    <div class="cuadro-modal-content">
+      <a href="#">X</a>
+      Hola mundo!
+    </div>
+  </div>
+
+  <main>
+    Contenido principal
+    <a href="#modal1">Abrir modal</a>
+  </main>
+</body>
+</html>

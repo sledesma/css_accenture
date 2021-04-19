@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .tarjeta {
+      width: 400px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      margin-left: 455px;
+    }
+
+    .tarjeta:hover .tarjeta-imagen{
+      opacity: 0.5;
+    }
+
+    .tarjeta-imagen {
+      width: inherit;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .tarjeta-contenido {
+      z-index: 999;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 50%;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="tarjeta">
+    <img class="tarjeta-imagen" src="https://i.picsum.photos/id/626/800/600.jpg?hmac=hnMBrJuwHKX0KODz0wsmSSA0FsWN7Pah0fJzsmWwQDE" alt="">
+    <div class="tarjeta-contenido">
+      Hola mundo
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <img class="tarjeta-imagen" src="https://i.picsum.photos/id/626/800/600.jpg?hmac=hnMBrJuwHKX0KODz0wsmSSA0FsWN7Pah0fJzsmWwQDE" alt="">
+    <div class="tarjeta-contenido">
+      Hola mundo
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <img class="tarjeta-imagen" src="https://i.picsum.photos/id/626/800/600.jpg?hmac=hnMBrJuwHKX0KODz0wsmSSA0FsWN7Pah0fJzsmWwQDE" alt="">
+    <div class="tarjeta-contenido">
+      Hola mundo
+    </div>
+  </div>
+
+</body>
+</html>
