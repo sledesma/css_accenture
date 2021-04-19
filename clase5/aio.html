@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>AIO</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			.clase-1-tipografias {
+				font-family: "Zen Dots", cursive;
+			}
+
+			.clase-1-colores {
+				color: #00b92e;
+			}
+
+			.clase-2-fondo {
+				background-color: red;
+			}
+
+			.clase-2-fondo-imagen {
+				background-image: url(https://i.picsum.photos/id/626/800/600.jpg?hmac=hnMBrJuwHKX0KODz0wsmSSA0FsWN7Pah0fJzsmWwQDE);
+				background-position: center;
+				margin: 10px;
+				background-size: cover;
+				width: 200px;
+				height: 200px;
+			}
+
+			.clase-2-flex {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.clase-2-bordes {
+				border: 1px solid black;
+			}
+
+			.clase-3-bordes-redondeados {
+				border-radius: 100px;
+			}
+
+			.clase-3-sombras {
+				box-shadow: 4px 5px 21px 0px rgba(0, 0, 0, 0.75);
+			}
+
+			.clase-3-float-left {
+				float: left;
+			}
+
+			.clase-3-float-right {
+				float: right;
+			}
+
+			.clase-4-hover {
+				opacity: 0.5;
+			}
+
+			.clase-4-hover:hover {
+				opacity: 1;
+			}
+
+			.clase-4-grilla {
+				margin-top: 300px;
+				display: grid;
+				grid-template-columns: 20% 20% 20% 20%;
+				gap: 2.5%;
+				justify-content: center;
+				margin-bottom: 60px;
+			}
+
+			.clase-4-grilla div {
+				border: 1px solid black;
+				padding: 100px;
+			}
+
+			.clase-4-tabla {
+				width: 100%;
+			}
+
+			.clase-4-tabla tr {
+				display: flex;
+			}
+
+      .clase-4-tabla tbody tr {
+        background-color: rgb(0, 185, 46, 0.5);
+      }
+
+			/*
+    An + B
+    n = 0   2n + 1 = 0 + 1 = 1
+    n = 1   2n + 1 = 2 + 1 = 3
+    n = 2   2n + 1 = 4 + 1 = 5
+    n = 3
+    n = 4
+    n = 5
+    */
+			.clase-4-tabla tbody tr:nth-child(2n + 1) {
+				background-color: white;
+			}
+
+      .clase-4-tabla tbody tr:hover {
+        background-color: rgb(0, 185, 46, 0.7);
+        cursor: pointer;
+      }
+
+      .clase-4-tabla thead tr {
+        background-color: #00b92e;
+        color: white;
+      }
+
+			.clase-4-tabla th,
+			.clase-4-tabla td {
+				width: 100%;
+				padding: 10px;
+				text-align: center;
+			}
+
+      .clase-4-tabla .precio::before {
+        content: '$';
+      }
+		</style>
+	</head>
+	<body>
+		<h1 class="clase-1-tipografias clase-1-colores">Hola mundo</h1>
+
+		<div
+			class="clase-4-hover clase-3-float-left clase-2-fondo-imagen clase-2-flex clase-2-bordes clase-3-bordes-redondeados"
+		>
+			Hola mundo
+		</div>
+		<div
+			class="clase-4-hover clase-3-float-right clase-2-fondo-imagen clase-2-flex clase-3-sombras clase-3-bordes-redondeados"
+		>
+			Hola mundo
+		</div>
+
+		<div class="clase-4-grilla">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<table class="clase-4-tabla">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Precio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="precio">999</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
