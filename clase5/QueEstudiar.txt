@@ -1,0 +1,26 @@
+¿Donde estamos?
+
+1) Programando para la web
+2) El famoso "Stack" web
+  Front-End   Back-End    Base de datos
+3) CSS Esta ubicado en el FRONT-END
+
+
+¿A donde vamos?
+1) Profundizamos en el Front-End
+2) Nos vamos del Front-End
+
+
+¿Cómo vamos hacia allá?
+1 - PROFUNDIZAR EN EL FRONT END
+  Estructura (HTML)
+  Presentacion (CSS)
+    Librerías (Bootstrap, TailWind, Material Design) - Seguir usando CSS
+    Preprocesadores (SASS, LESS, Stylus) - Dejar de usar CSS
+  Funcionalidad (JS)
+    JavaScript nativo
+    Librerías y Frameworks (React / Vue / Angular.Js / Angular)
+
+2 - NOS VAMOS DEL FRONT-END
+  Un lenguaje del lado del servidor
+  Un motor de base de datos

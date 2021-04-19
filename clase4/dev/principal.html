@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="css/componentes.css">
 
   <style>
+    #wrapper {
+      padding-top: 52px;
+    }
     /*Estilos de la grilla*/
     #grilla {
       display: grid;
       grid-template-columns: 31.3% 31.3% 31.3%;
       gap: 1%;
       justify-content: center;
-
       padding: 30px;
     }
 
@@ -45,15 +47,17 @@
 <body>
   <nav class="barra-menu">
     <span>Nombre usuario</span>
-    <a href="#">Salir</a>
+    <a href="index.html">Salir</a>
   </nav>
-  <main id="grilla">
-    <a href="modulo.html" class="grilla-item grilla-item-rojo">Modulo 1</a>
-    <a href="modulo.html" class="grilla-item grilla-item-verde">Modulo 2</a>
-    <a href="modulo.html" class="grilla-item grilla-item-azul">Modulo 3</a>
-    <a href="modulo.html" class="grilla-item grilla-item-rojo">Modulo 4</a>
-    <a href="modulo.html" class="grilla-item grilla-item-amarillo">Modulo 5</a>
-    <a href="modulo.html" class="grilla-item grilla-item-azul">Modulo 6</a>
-  </main>
+  <div id="wrapper">
+    <main id="grilla">
+      <a href="modulo.html" class="grilla-item grilla-item-rojo">Modulo 1</a>
+      <a href="modulo.html" class="grilla-item grilla-item-verde">Modulo 2</a>
+      <a href="modulo.html" class="grilla-item grilla-item-azul">Modulo 3</a>
+      <a href="modulo.html" class="grilla-item grilla-item-rojo">Modulo 4</a>
+      <a href="modulo.html" class="grilla-item grilla-item-amarillo">Modulo 5</a>
+      <a href="modulo.html" class="grilla-item grilla-item-azul">Modulo 6</a>
+    </main>
+  </div>
 </body>
 </html>
