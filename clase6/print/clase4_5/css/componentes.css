@@ -61,34 +61,3 @@
   color: black;
   text-decoration: none;
 }
-
-/* DISEÑO ADAPTABLE */
-
-@media screen and (max-width: 567px) {
-  .barra-menu {
-    position: relative;
-    height: 62px;
-    flex-direction: column;
-  }
-
-  .barra-menu div {
-    margin-top: 10px;
-    
-  }
-
-  .main-wrapper {
-    padding: 0;
-  }
-
-  .area-trabajo {
-    float: none;
-    width: 100%;
-  }
-
-  .sidebar {
-    float: none;
-    width: 100%;
-    position: relative;
-    height: auto;
-  }
-}

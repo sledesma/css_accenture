@@ -1,0 +1,35 @@
+@media print {
+  header {
+    display: none;
+  }
+
+  #promociones #promociones-contenedor .promociones-item {
+    border: 1px solid rgba(200,151,62,0.51);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    padding: 40px;
+  }
+
+  #catalogo #catalogo-contenedor {
+    flex-direction: column;
+  }
+
+  #catalogo #catalogo-contenedor .catalogo-item {
+    height: auto;
+    padding: 20px;
+  }
+
+  #catalogo {
+    margin-bottom: 150px;
+  }
+
+  footer div {
+    display: none;
+  }
+
+  footer div:nth-child(1) {
+    display: block;
+    width: 100%;
+  }
+}

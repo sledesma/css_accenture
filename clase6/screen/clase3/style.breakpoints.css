@@ -1,0 +1,38 @@
+@media screen and (max-width: 767px) {
+  header div {
+    height: 80%;
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+  }
+  header div span {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  #catalogo #catalogo-contenedor {
+    flex-direction: column;
+  }
+
+  #catalogo #catalogo-contenedor .catalogo-item {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    margin-bottom: 1%;
+  }
+
+  #historia {
+    text-align: justify;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  footer div {
+    width: 100%;
+  }
+}
