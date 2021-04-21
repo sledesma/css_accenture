@@ -1,0 +1,63 @@
+/* COMPONENTE BARRA MENU */
+.barra-menu {
+  background-color: #073763ff;
+  position: fixed;
+  color: #eeeeee;
+  font-weight: bold;
+  height: 52px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra-menu a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+/* COMPONENTE MAIN-WRAPPER */
+.main-wrapper {
+  padding-top: 52px;
+}
+
+/* COMPONENTE AREA-TRABAJO */
+.area-trabajo {
+  width: 75%;
+  float: right;
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+
+/* COMPONENTE SIDEBAR */
+.sidebar {
+  background-color: #efefefff;
+  height: 100vh;
+  width: 25%;
+  float: left;
+  position: fixed;
+}
+
+.sidebar .sidebar-header {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar .sidebar-item {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar .sidebar-item a {
+  color: black;
+  text-decoration: none;
+}

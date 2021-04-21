@@ -1,0 +1,125 @@
+<!-- Modulo - Vista general de un módulo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/globales.css">
+  <link rel="stylesheet" href="css/componentes.css">
+
+  <style>
+    body {
+      height: 1000px;
+    }
+
+    .precio::before {
+      content: '$';
+    }
+
+    .stock::after {
+      content: ' u';
+    }
+
+    @media print {
+      .barra-menu,
+      .sidebar {
+        display: none;
+      }
+
+      .area-trabajo {
+        width: 100%;
+      }
+
+      .area-trabajo::before {
+        display: block;
+        content: 'Reporte general - ' attr(id);
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        font-size: 36px;
+      }
+
+      .main-wrapper {
+        padding: 0;
+      }
+
+      td, th {
+        padding: 20px;
+        border-bottom: 1px solid black;
+      }
+
+      td {
+        text-align: justify;
+      }
+    }
+  </style>
+
+  
+  <title>Document</title>
+</head>
+<body>
+  <nav class="barra-menu">
+    <span>Nombre usuario</span>
+    <div>
+      <a href="#" onclick="window.print()">Imprimir</a>
+      <a href="principal.html">Principal</a>
+      <a href="index.html">Salir</a>
+    </div>
+  </nav>
+
+  <main class="main-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-header">Productos</div>
+      <div class="sidebar-item"><a href="modulo-alta.html">ALTA</a></div>
+      <div class="sidebar-item"><a href="modulo-baja.html">BAJA</a></div>
+      <div class="sidebar-item"><a href="modulo-modificacion.html">MODIFICACION</a></div>
+    </aside>
+    <section class="area-trabajo" id="productos">
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>NOMBRE</th>
+            <th>DESCRIPCION</th>
+            <th>PRECIO</th>
+            <th>STOCK</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+          <tr>
+            <td>lorem</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sunt alias explicabo ducimus commodi, omnis vitae rerum nostrum quidem minima blanditiis error reiciendis iste, odit, nulla nisi reprehenderit ab magnam?</td>
+            <td class="precio">999</td>
+            <td class="stock">10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

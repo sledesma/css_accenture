@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra de Zapatos al mejor precio">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <style>
+    /*
+    REGLAS PRINCIPALES
+    */
+          /* # ff ff ff ab */
+      /*   R  G  B  A */
+
+      /* 0 1 2 3 4 5 6 7 8 9 A B C D E F */
+      /*
+      FF - 00
+      256 - 0
+      */
+    html, body {
+      margin: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #menu {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    #contenido {
+      font-family: 'Lato', sans-serif;
+      background-color: #ffffffab;
+      width: 50%;
+      padding: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 110px;
+      text-align: center;
+    }
+
+    #fondo {
+      background-image: url(bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh; /* el 100% de la alutra (h) del viewport (v) */
+    }
+
+    @media print {
+      #menu {
+        display: none;
+      }
+
+      #contenido {
+        margin-top: 0;
+        font-size: 20px;
+      }
+
+      #contenido::before {
+        content: 'Nuestra marca';
+
+        display: block;
+        margin: 40px;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--Caja grande-->
+  <header id="fondo">
+    <!--Menu-->
+    <nav id="menu">
+      <a href="#">Home</a> | <a href="#">Catálogo</a> | <a href="#">Contacto</a>
+    </nav>
+
+    <!--Caja chica / descripcion-->
+    <div id="contenido">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper tellus id dolor euismod aliquet. Etiam hendrerit mauris in elementum lobortis. Suspendisse mollis arcu in risus porta, a facilisis enim gravida. Suspendisse blandit aliquet augue, vel luctus erat ultricies sit amet. Aliquam et lacus id dolor lobortis elementum in hendrerit diam. Nullam dictum ligula ut sollicitudin euismod. Maecenas cursus suscipit lorem, nec mollis leo imperdiet eget. Praesent elementum tincidunt lectus ut hendrerit. Mauris ut fringilla purus, at aliquet urna. Pellentesque mattis, augue quis porta varius, ipsum elit molestie arcu, sed pretium arcu tortor at dolor.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper tellus id dolor euismod aliquet. Etiam hendrerit mauris in elementum lobortis. Suspendisse mollis arcu in risus porta, a facilisis enim gravida. Suspendisse blandit aliquet augue, vel luctus erat ultricies sit amet. Aliquam et lacus id dolor lobortis elementum in hendrerit diam. Nullam dictum ligula ut sollicitudin euismod. Maecenas cursus suscipit lorem, nec mollis leo imperdiet eget. Praesent elementum tincidunt lectus ut hendrerit. Mauris ut fringilla purus, at aliquet urna. Pellentesque mattis, augue quis porta varius, ipsum elit molestie arcu, sed pretium arcu tortor at dolor.
+
+    </div>
+  </header>
+
+</body>
+</html>

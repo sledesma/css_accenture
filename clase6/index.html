@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body { margin: 0; }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+
+
+    /* VISTA DE IMPRESIÓN */
+    /*
+    @media [DISPOSITIVO DE VISUALIZACION] {
+        [REGLAS A PRIORIZAR]
+    }
+    */
+
+    @media print {
+      div {
+        width: 200px;
+        height: 200px;
+        border: 3px solid red;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+      }
+
+      div::after {
+        content: 'Estas imprimiendo';
+      }
+    }
+    
+
+
+    
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

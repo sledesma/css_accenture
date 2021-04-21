@@ -1,0 +1,147 @@
+/* ESTILOS GLOBALES */
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #291911;
+  background-color: #291911;
+}
+
+h1 {
+  color: #C8973E;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+#wrapper {
+  background-color: #E9CFA6;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  box-sizing: border-box;
+
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.boton_cta {
+  padding: 20px;
+  color: white;
+  background-color: #782F0C;
+  text-decoration: none;
+
+  margin-top: 20px;
+}
+
+
+/* HEADER */
+header {
+  background-image: url(images/header.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+  display: flex;
+  /* flex-direction indica el EJE PRINCIPAL. Por defecto es ROW (horizontal) */
+  /* flex-direction: row; */
+  justify-content: center; /* Alinea los items en torno al EJE PRINCIPAL */ 
+  align-items: center; /* Alinea los items en torno al EJE SECUNDARIO */ 
+}
+
+header div {
+  /* # RR GG BB TT */
+  background-color: #e9cfa6af;
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+/* MAIN */
+
+/* SECCION PROMOCIONES */
+#promociones #promociones-contenedor {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#promociones #promociones-contenedor .promociones-item {
+  padding: 50px;
+  margin-bottom: 10px;
+  
+  box-shadow: 0px 0px 17px 3px rgba(200,151,62,0.51);
+  -webkit-box-shadow: 0px 0px 17px 3px rgba(200,151,62,0.51);
+  -moz-box-shadow: 0px 0px 17px 3px rgba(200,151,62,0.51);
+
+  cursor: pointer;
+}
+
+/* CATALOGO */
+#catalogo {
+  margin-bottom: 50px;
+}
+
+#catalogo #catalogo-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#catalogo #catalogo-contenedor .catalogo-item {
+  width: 30%;
+  height: 200px;
+  margin: 1%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  text-decoration: none;
+}
+
+#catalogo #catalogo-contenedor .catalogo-item div {
+  /* # RR GG BB TT */
+  background-color: #e9cfa6af;
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid black;
+  margin-top: 100px;
+  height: 200px;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+footer div {
+  width: 33%;
+}
